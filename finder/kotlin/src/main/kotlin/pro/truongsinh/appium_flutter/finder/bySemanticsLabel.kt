@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 fun bySemanticsLabel(label: String): FlutterElement {
   return FlutterElement(mapOf(
     "finderType" to "BySemanticsLabel",
-    "isRegExp" to false,
     "label" to label
     ))
 }

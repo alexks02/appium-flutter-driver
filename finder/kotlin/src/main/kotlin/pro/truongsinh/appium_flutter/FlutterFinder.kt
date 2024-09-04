@@ -15,7 +15,7 @@ import pro.truongsinh.appium_flutter.finder.pageBack as _pageBack
 import pro.truongsinh.appium_flutter.finder.text as _text
 
 
-open class FlutterFinder(private val driver: RemoteWebDriver) {
+public class FlutterFinder(private val driver: RemoteWebDriver) {
   private val fileDetector = FileDetector { _ -> null }
   fun ancestor(of: FlutterElement, matching: FlutterElement): FlutterElement {
     val f = _ancestor(of, matching, matchRoot = false, firstMatchOnly = false)
