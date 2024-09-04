@@ -11,6 +11,6 @@ public class FlutterElement(m: Map<String, *>) : RemoteWebElement() {
   fun getRawMap():  Map<String, *> { return _rawMap }
 
   override fun toString(): String {
-    return String.format("[FlutterElement]")
+    return getRawMap().toString()
   }
 }
